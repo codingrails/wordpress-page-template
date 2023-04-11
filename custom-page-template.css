@@ -1,0 +1,388 @@
+
+
+@font-face {
+ font-family: titlefont;
+ src: url(https://howmany.site/realdrseattle/AlesandOutline-ExtraBold.ttf.woff);
+}
+
+.the_title{
+ font-family: titlefont;
+ 
+}
+body{margin:0px;}
+.custom-logo{
+  max-width:300px;
+  height:auto;
+
+}
+.site-header{
+  background:#2C5E50; 
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.call-to-action{
+  padding-left:10px;
+  border-left-color:white;
+  border-left-style:solid;
+  color:white;
+}
+
+.phonenumber{
+  color:#51BC9B;
+}
+
+.logo{
+  align-self: center;
+  justify-self: center;
+}
+.site-navigation{
+  align-self: center;
+}
+
+.site-header a, ul{
+  text-decoration:none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  color: white;
+
+}
+.mobile-navigation{
+  display:none;
+}
+
+svg{
+  max-width:100%;
+  height:auto;
+}
+svg path.opacity{
+  opacity:0.7;
+}
+.mainsection {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+  "maincontent"
+  "maincontact";
+  justify-content: center;
+  max-width: 80%;
+  justify-self: center;
+  margin-bottom: -90px;
+  
+}
+
+
+.the_title{
+  margin:0px;
+  font-family: titlefont;
+  color: white;
+  font-size: 90px;
+  text-transform: bold;
+  font-weight: 900;
+}
+.the_content h2{
+  margin: 0px;
+  font-size: 60px;
+  font-weight: 900;
+  color: white;
+  
+}
+.the_content{
+  color: white;
+  font-family: 'Open Sans';
+  font-size: 15px;
+}
+
+.maincontent { grid-area: maincontent; 
+  justify-self: center;
+}
+
+.maincontact { grid-area: maincontact; 
+  justify-self: center;
+}
+
+.main{
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: min-content;
+  
+}
+
+@media (min-width: 700px) {
+  .site-header {  display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: min-content;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+
+
+  }
+
+
+  .site-header button{
+    display:none;
+  }
+  .site-header a:hover{
+    text-decoration: underline;
+  }
+  .site-navigation{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: min-content;
+    gap: 0px 0px;
+
+  }
+
+  .site-navigation ul{
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-rows: min-content;
+    gap: 0px 0px;
+    grid-auto-flow: column;
+  }
+
+  
+
+
+
+}
+@media (max-width: 699px) {
+
+
+  .custom-logo{
+    max-width:170px;
+    height:auto;
+
+  }
+  .site-header {
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr;
+    grid-template-rows: min-content ;
+
+
+
+  }
+
+
+  .site-navigation ul{
+    display:none;
+  }
+  .mobile-navigation ul li{
+    padding: 10px 0px 0px 20px;
+
+
+
+  }
+
+  .mobile-navigation ul li:hover{
+    text-decoration:underline;
+
+  }
+  .site-header .button{
+
+    align-self: center;
+    justify-self: center;
+    opacity:0.85;
+    border-radius: 2px;
+    border-width:0px;
+
+  }
+
+  .site-header .button:hover{
+    opacity:0.95;
+  }
+
+  .site-header .button:active{
+    opacity:0.96;
+    transform: scale(1.1);
+  }
+
+
+  .site-header .button div {
+    width: 15px;
+    height: 2px;
+    background-color: #154D42;
+    margin: 3px 0;
+  }
+
+}
+
+
+
+
+/*Starting the main section*/
+
+.main{
+ 
+  background-image: linear-gradient(to bottom, #2C5E50, rgba(0,0,0,0.2)), url('https://howmany.site/realdrseattle/wp-content/uploads/2023/04/Asset-1-scaled.jpeg');
+  background-size: cover;
+  background-position: center;
+
+}
+
+div.input-block {
+  position: relative;
+}
+
+div.input-block input {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #495055;
+  background: transparent;
+
+  padding: 15px 0px 15px 10px;
+  border-radius: 5px;
+  border: 1px solid  white;
+  outline:none;
+}
+
+div.input-block span.placeholder {
+  position: absolute;
+  margin: 17px 0;
+  padding: 0 4px;
+  font-family: Roboto, sans-serif;
+
+  color:  #6c757d;
+
+  display: flex;
+  align-items: center;
+
+  font-size: 1.2rem;
+
+  top: 0;
+  left: 17px;
+
+  transition: all 0.2s;
+  transform-origin: 0% 0%;
+  background: none;
+  pointer-events: none;
+}
+
+div.input-block input:valid + span.placeholder,
+div.input-block input:focus + span.placeholder {
+  transform: scale(0.8) translateY(-30px);
+  background: #247C6C;
+  color: white;
+}
+
+div.input-block input:focus{
+  color: #284B63;
+  box-shadow: 0 0 4px 4px #48abe0;
+}
+
+div.input-block input:focus + span.placeholder {
+  color: white;
+}
+select{
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: white;
+  background: transparent;
+  padding:15px 0px 15px 10px;
+  border-radius: 5px;
+  border: 2px solid white;
+  outline: none;
+}
+
+form{
+  background: linear-gradient(to bottom,#247C6C, #247C6C,#247C6C, #509689,#66a398);
+  width: max-content;
+  padding: 20px;
+  border-radius: 20px;
+  opacity: 0.87;
+}
+
+.formcontactus {  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+  "title title"
+  "first-name last-name"
+  "email company"
+  "country country"
+  "submit submit";
+}
+
+.title { grid-area: title; }
+
+.first-name { grid-area: first-name; }
+
+.last-name { grid-area: last-name; }
+
+.email { grid-area: email; }
+
+.company { grid-area: company; }
+
+.country { grid-area: country; }
+
+.submit { grid-area: submit; }
+
+span.title{
+  align-self: center;
+  justify-self: center;
+  color: white;
+  font-size: 30px;
+  letter-spacing: 1.5px;
+}
+
+input.submit{
+
+  align-self: center;
+  justify-self: center;
+  border: solid;
+  border-color: white;
+  color: white;
+  background: transparent;
+  padding: 10px 50px;
+  border-radius: 5px;
+
+}
+
+
+
+
+@media (min-width: 1100px) {
+  .mainsection {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 40px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "maincontent maincontact";
+    max-width:68%;
+    justify-self:center;
+    margin-bottom:-150px;
+  }
+}
+
+@media (max-width: 500px) {
+  .the_title{
+    font-size:60px;
+  }
+  
+  .formcontactus {  display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "title"
+    "first-name" "last-name"
+    "email" "company"
+    "country"
+    "submit";
+  }
+
+  .mainsection{
+    grid-template-rows: min-content;
+    margin-bottom: -30px;
+  }
+  
+}
+
