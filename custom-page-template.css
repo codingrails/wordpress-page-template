@@ -1,4 +1,6 @@
-
+svg.waves{
+      margin-bottom:-10px;
+  }
 
 @font-face {
  font-family: titlefont;
@@ -246,7 +248,7 @@ div.input-block span.placeholder {
   padding: 0 4px;
   font-family: Roboto, sans-serif;
 
-  color:  #6c757d;
+  color:  #4f5357;
 
   display: flex;
   align-items: center;
@@ -357,8 +359,9 @@ input.submit{
     "maincontent maincontact";
     max-width:68%;
     justify-self:center;
-    margin-bottom:-150px;
+  
   }
+  
 }
 
 @media (max-width: 500px) {
