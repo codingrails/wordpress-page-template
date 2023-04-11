@@ -20,7 +20,7 @@ get_header();
         'container'      => false,
       ) );
     ?>
-    <div class="call-to-action">Call Now For A  <b class="phonenumber">203.364.4362</b></div>
+    <div class="call-to-action"><b>CAll NOW FOR A CONSULT</b> <b class="phonenumber">203.364.4362</b></div>
     
   </nav>
   <button class="button" id="site-header-button"><div></div>
@@ -114,7 +114,3 @@ button.addEventListener("click", () => {
   }
 });
 </script>
-
-<?php
-
-?>
